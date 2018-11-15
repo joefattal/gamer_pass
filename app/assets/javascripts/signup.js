@@ -15,17 +15,18 @@
 // modalButton.addEventListener("click", openModal);
 // closeModalButton.addEventListener("click", closeModal);
 
-var modalButton = document.getElementById("signup-button");
-var modal = document.getElementById("signup-modal");
-var backdrop = document.getElementById("modal-backdrop");
-var closeX = document.getElementById("close-x");
+
+var modalButton = document.getElementById("signup-form-transition");
+var submitButton = document.getElementById("signup-form-submit")
+var basicsDiv = document.getElementById("basic__details");
+var systemsDiv = document.getElementById("game__selection");
 
 function toggleModal() {
-	modal.classList.toggle("signup__hidden");
-	backdrop.classList.toggle("signup__hidden");
-	// console.log("modal opening");
+	basicsDiv.classList.toggle("signup__hidden");
+	systemsDiv.classList.toggle("signup__hidden");
+	modalButton.classList.toggle("signup__hidden");
+	submitButton.classList.toggle("signup__hidden")
+	console.log("modal opening");
 }
 
 modalButton.addEventListener("click", toggleModal);
-backdrop.addEventListener("click", toggleModal);
-closeX.addEventListener("click", toggleModal);

@@ -47,3 +47,34 @@
 #About{
 	padding-top: 80px;
 }
+
+.outer-box {
+	display: flex;
+	/*flex-direction: row;*/
+}
+ .placeholder-box {
+	background-color: slategrey;
+	height: 700px;
+	margin: 80px 20px;
+}
+ .splash {
+
+ 	width: 35%;
+}
+ .form {
+	/*margin: 20px;*/
+	width: 55%;
+}
+@media(max-width: 1080px){
+	.outer-box{
+		flex-direction: column;
+		margin-top: 60px;
+	}
+	.placeholder-box {
+	background-color: slategrey;
+	height: 700px;
+	margin: 20px 20px;
+	}
+	.splash{width: 95%;}
+	.form{width: 95%;}
+}

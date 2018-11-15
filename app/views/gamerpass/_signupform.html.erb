@@ -1,7 +1,7 @@
 <div class="modal__formDiv">
    <%= form_tag "/user-signup", :class => "modal__form", :id => "modal__form" do %>
-   <div class="basic__details">
-     <h4 class="basic-detail-label">Basic Details</h4>
+    <div id="basic__details" class="basic__details signup__hidden">
+      <h4 class="basic-detail-label">Basic Details</h4>
       <label>
         <input
           class="signup-input"
@@ -71,9 +71,16 @@
       <%= select_tag("apps[]", options_from_collection_for_select(@appl.games, :id, :name), {:class => "js-example-basic-multiple", :include_blank => '', :multiple => true}) %>
     </label>
     </div>
+
     <div class="button-containers signup-button-container">
       <button
-        class="form-submit signup-btn-submit"
+        id="signup-form-transition"
+        class="form-submit signup-btn-change-form"
+        type="button"
+        >Next</button>
+      <button
+        id="signup-form-submit"
+        class="form-submit signup-btn-submit signup__hidden"
         type="submit"
         >Done!</button>
     </div>

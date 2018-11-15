@@ -7,13 +7,18 @@
     </ul>
   </div><!-- NAVIGATION CONTENT -->
 </nav>
-
 <div id="top"></div>
 <div class="content__box">
   <h1 class="UVP">All&nbsp;Your&nbsp;Tournaments in&nbsp;One&nbsp;Spot</h1>
-  <div class="example-screens__box">
-    <%= image_tag "example_screens.png", :class => "example-screen",  :alt => "application example images"%>
+  <!-- <div class="example-screens__box">
+    <<%= image_tag "example_screens.png", :class => "example-screen",  :alt => "application example images"%> %>
   </div><!-- EXAMPLE SCREENS -->
+  <div class="outer-box">
+		<div class="splash placeholder-box"></div>
+		<div class="form placeholder-box">
+      <%= render "signupform" %>
+    </div>
+	</div>
   <div class="selling-points__box">
     <h2 class="selling-point">Key Detail about Gamer Pass</h2>
     <h2 class="selling-point">Another Consideration</h2>
@@ -32,20 +37,9 @@
       <div class="signup__close-x__up-arm"></div>
     </div><!-- CLOSE X BOX -->
     <h3 class="modal-title">Complete this form to receive X benefit!</h3>
-    <%= render "signupform" %>
   </div><!-- SIGNUP MODAL -->
 
-  <div class="content__main">
-    <p>
-      Gamer Pass is an opportunity to engage with your gaming community of choice in exactly the way in which these paragraphs will describe with fervent, desire building, intensity.
-    </p>
-    <script src="https://verbingnounssincewhen.com/p/2"></script>
-    <div class="medium-space"></div>
-    <h2 class="target-link" id="About">About</h2>
-    <p>Once upon a time a problem existed, this paragraph might describe what that problem was and how awful that problem was and how Gamer Pass founder Joseph Fattal found others suffering under the terrible lack of Gamer Pass. The succeeding paragraph may describe how Joe has been solving this problem diligently and without the aid of a sweet database. Maybe then, we'll hear about some of the remarkable success which have been had, just to secure that claim to value. A concluding paragraph will explain the application which is to come and the imperative nature of signing up now to be kept abreast of all developments and gaming opportunities.
-    <script src="https://verbingnounssincewhen.com/p/3"></script>
-    <div class="medium-space"></div>
-  </div><!-- CONTENT MAIN -->
+  <!-- CONTENT MAIN -->
 
   <div id="Contact"></div>
 
