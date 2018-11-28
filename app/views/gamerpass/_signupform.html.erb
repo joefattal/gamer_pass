@@ -2,7 +2,7 @@
    <%= form_tag "/user-signup", :class => "modal__form", :id => "modal__form" do %>
     <div id="basic__details" class="basic__details signup__hidden">
       <h4 class="basic-detail-label">Basic Details</h4>
-      <label>
+      <!-- <label>
         <input
           class="signup-input"
           autoFocus
@@ -20,7 +20,7 @@
         type="text"
         placeholder="Last *"
       />
-      </label>
+      </label> -->
       <label>
         <input
           class="signup-input"
@@ -29,13 +29,13 @@
           placeholder="Email *"
          />
       </label>
-      <label>
+      <!-- <label>
         <input
           class="signup-input full"
           name="user[phone]"
           placeholder="Phone"
          />
-      </label>
+      </label> -->
       <label>
         <input
           class="signup-input full"
@@ -44,8 +44,8 @@
          />
       </label>
     </div>
-    <div class="game__selection">
-    <h4>Which games do you go to tournaments for?</h4>
+    <div id="game__selection" class="game__selection">
+    <h4>Which are your games?</h4>
     <label>
       <h5>Xbox</h5>
       <%= select_tag("xbox[]", options_from_collection_for_select(@xbox.games, :id, :name), {:class => "js-example-basic-multiple", :include_blank => '', :multiple => true}) %>
@@ -67,7 +67,7 @@
       <%= select_tag("cards[]", options_from_collection_for_select(@tcg.games, :id, :name), {:class => "js-example-basic-multiple", :include_blank => '', :multiple => true}) %>
     </label>
     <label>
-      <h5>App Games</h5>
+      <h5>Mobile Apps</h5>
       <%= select_tag("apps[]", options_from_collection_for_select(@appl.games, :id, :name), {:class => "js-example-basic-multiple", :include_blank => '', :multiple => true}) %>
     </label>
     </div>

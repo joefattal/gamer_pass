@@ -21,7 +21,6 @@ var submitButton = document.getElementById("signup-form-submit")
 var basicsDiv = document.getElementById("basic__details");
 var systemsDiv = document.getElementById("game__selection");
 
-// console.log(modalButton, submitButton, basicsDiv, systemsDiv)
 function toggleModal() {
 	basicsDiv.classList.toggle("signup__hidden");
 	systemsDiv.classList.toggle("signup__hidden");
