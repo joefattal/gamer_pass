@@ -6,7 +6,7 @@
 	width: 100%;
 	padding: 15px 60px;
 	margin: 0 0 0 -10px;
-
+	z-index: 1 !important;
 	background-color: #233047;
 	/*border: 1px solid red;*/
 }

@@ -3,49 +3,47 @@
     <a class="home" href="#top"><span>GP</span></a>
     <ul class="nav-content">
       <li><a href="#Contact" class="navigation__page-link" href="events.html">Contact</a></li>
-      <li><a href="#About" class="navigation__page-link" href="contact.html">About</a></li>
+      <!-- <li><a href="#About" class="navigation__page-link" href="contact.html">About</a></li> -->
     </ul>
   </div><!-- NAVIGATION CONTENT -->
 </nav>
-
 <div id="top"></div>
 <div class="content__box">
   <h1 class="UVP">All&nbsp;Your&nbsp;Tournaments in&nbsp;One&nbsp;Spot</h1>
-  <div class="example-screens__box">
-    <%= image_tag "example_screens.png", :class => "example-screen",  :alt => "application example images"%>
+  <!-- <div class="example-screens__box">
+    <<%= image_tag "example_screens.png", :class => "example-screen",  :alt => "application example images"%> %>
   </div><!-- EXAMPLE SCREENS -->
+  <div class="outer-box">
+		<div class="splash placeholder-box">
+      <div class="splashimg big">
+        <%= image_tag "preview_animation_etFin_big.gif", :class => "gamer_pass_gif", :alt => "gamerpass sneakpeak gif"%>
+      </div>
+      <div class="splashimg small">
+        <%= image_tag "preview_animation_etFin_sml.gif", :class => "gamer_pass_gif", :alt => "gamerpass sneakpeak gif"%>
+      </div>
+    </div>
+		<div class="form placeholder-box">
+      <%= render "signupform" %>
+    </div>
+	</div>
+  <!-- Help grow tournaments and your local community for your favorite games
+Get invited to tournaments in your area
+Buy and sell games and other accessories with gamers in your area
+Learn more about your favorite esports teams and local venues
+Discover new gaming job opportunities  -->
   <div class="selling-points__box">
-    <h2 class="selling-point">Key Detail about Gamer Pass</h2>
-    <h2 class="selling-point">Another Consideration</h2>
-    <h2 class="selling-point">Big Claim Reinforcing Unique Value Proposition</h2>
+    <h2 class="selling-point">Help&nbsp;Grow&nbsp;Tournaments in&nbsp;Your&nbsp;Community</h2>
+    <hr class="horizontal-rule__taper">
+    <h2 class="selling-point">Buy&nbsp;and&nbsp;Sell Games&nbsp;and&nbsp;other Accessories with&nbsp;Gamers&nbsp;in&nbsp;your&nbsp;Area</h2>
+    <hr class="horizontal-rule__taper">
+    <h2 class="selling-point">Get&nbsp;Invited to Tournaments&nbsp;in&nbsp;Your&nbsp;Area</h2>
+    <hr class="horizontal-rule__taper">
+    <h2 class="selling-point">Discover&nbsp;New&nbsp;Gaming Job&nbsp;Opportunities</h2>
+    <hr class="horizontal-rule__taper">
+    <h2 class="selling-point">Learn&nbsp;More&nbsp;about&nbsp;Your Favorite&nbsp;Esports&nbsp;Teams and Local&nbsp;Venues</h2>
   </div><!-- SELLING POINTS -->
 
-  <div class="signup__button" id="signup-button">
-    <span class="signup__promise">Never Miss a Tournament</span><br>
-    <span class="signup__text">Sign Up Now</span>
-  </div><!-- SIGNUP BUTTON-->
-
-  <div class="signup__backdrop signup__hidden" id="modal-backdrop"></div>
-  <div class="signup__modal signup__hidden" id="signup-modal">
-    <div class="signup__close-x__box" id="close-x">
-      <div class="signup__close-x__down-arm"></div>
-      <div class="signup__close-x__up-arm"></div>
-    </div><!-- CLOSE X BOX -->
-    <h3 class="modal-title">Complete this form to receive X benefit!</h3>
-    <%= render "signupform" %>
-  </div><!-- SIGNUP MODAL -->
-
-  <div class="content__main">
-    <p>
-      Gamer Pass is an opportunity to engage with your gaming community of choice in exactly the way in which these paragraphs will describe with fervent, desire building, intensity.
-    </p>
-    <script src="https://verbingnounssincewhen.com/p/2"></script>
-    <div class="medium-space"></div>
-    <h2 class="target-link" id="About">About</h2>
-    <p>Once upon a time a problem existed, this paragraph might describe what that problem was and how awful that problem was and how Gamer Pass founder Joseph Fattal found others suffering under the terrible lack of Gamer Pass. The succeeding paragraph may describe how Joe has been solving this problem diligently and without the aid of a sweet database. Maybe then, we'll hear about some of the remarkable success which have been had, just to secure that claim to value. A concluding paragraph will explain the application which is to come and the imperative nature of signing up now to be kept abreast of all developments and gaming opportunities.
-    <script src="https://verbingnounssincewhen.com/p/3"></script>
-    <div class="medium-space"></div>
-  </div><!-- CONTENT MAIN -->
+  <!-- CONTENT MAIN -->
 
   <div id="Contact"></div>
 

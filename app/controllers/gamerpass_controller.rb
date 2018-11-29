@@ -9,8 +9,8 @@ class GamerpassController < ApplicationController
   end
 
   def signup
-    user = User.new(safe_user_params)
-    if user.save
+    user = User.find_or_create_by(email: params[:user][:email])
+    if user.update(safe_user_params)
       user.add_favorite_games(params)
       flash[:message] = "Thank you for signing up to GamerPass, we'll contact you soon about next steps!"
       redirect_to('/')

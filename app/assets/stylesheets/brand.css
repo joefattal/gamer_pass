@@ -1,7 +1,8 @@
 
 body {
 	padding-top: 0px;
-	padding-bottom: 150px;
+	padding-bottom: 0px;
+	background-color: #e8ecf5;
 }
 
 * {
@@ -11,4 +12,13 @@ body {
 
 p {
 	max-width: 750px;
+}
+
+a {
+	text-decoration: none;
+	color: #577fb3;
+}
+
+a:hover {
+	color: #5a5a66;
 }

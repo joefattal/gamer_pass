@@ -2,11 +2,11 @@
 
 .signup__button {
 	position: sticky;
-	margin-top: -10px;
-	margin-bottom: 50px;
+	/*margin-top: 30px;*/
+	/*margin-bottom: 30px;*/
 	margin-left: auto;
 	margin-right: auto;
-	top: 80%;
+	top: 88%;
 	max-width: 400px;
 	padding: 10px 0 20px 0;
 
@@ -21,29 +21,25 @@
 }
 
 .signup__backdrop {
-	position: fixed;
+	/* position: fixed; */
 	top: 0;
 	height: 100%;
 	width: 110%;
 	margin-left: -10px;
-	background-color: rgba(35, 48, 71, .5)
-;;
+	background-color: rgba(35, 48, 71, .5);
 	opacity: 50%;
 }
 
 .signup__modal {
-	position: fixed;
+	/* position: fixed; */
 	top: 15%;
 	/*transform: translateX(50%);*/
 	left: 50%;
 	transform: translateX(-50%);
-
 	padding: 20px;
 	min-width: 60%;
 	max-width: 750px;
 	height: 70%;
-	box-sizing: border-box;
-	overflow: hidden;
 	border-radius: 13px;
 	background-color: white;
 	box-shadow: 3px 3px 3px 3px rgba(35,48,71, .75);
@@ -63,14 +59,14 @@
 }
 
 .signup__promise {
-	font-size: 1.3rem;
+	font-size: 1.6rem;
 	font-weight: 400;
 	font-style: italic;
 	color: #02070d;
 }
 
 .signup__text {
-	font-size: 2.4rem;
+	font-size: 2.6rem;
 	font-weight: 900;
 	color: white;
 }
