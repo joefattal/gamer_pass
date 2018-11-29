@@ -3,7 +3,7 @@
     <a class="home" href="#top"><span>GP</span></a>
     <ul class="nav-content">
       <li><a href="#Contact" class="navigation__page-link" href="events.html">Contact</a></li>
-      <li><a href="#About" class="navigation__page-link" href="contact.html">About</a></li>
+      <!-- <li><a href="#About" class="navigation__page-link" href="contact.html">About</a></li> -->
     </ul>
   </div><!-- NAVIGATION CONTENT -->
 </nav>
@@ -14,15 +14,33 @@
     <<%= image_tag "example_screens.png", :class => "example-screen",  :alt => "application example images"%> %>
   </div><!-- EXAMPLE SCREENS -->
   <div class="outer-box">
-		<div class="splash placeholder-box"></div>
+		<div class="splash placeholder-box">
+      <div class="splashimg big">
+        <%= image_tag "preview_animation_etFin_big.gif", :class => "gamer_pass_gif", :alt => "gamerpass sneakpeak gif"%>
+      </div>
+      <div class="splashimg small">
+        <%= image_tag "preview_animation_etFin_sml.gif", :class => "gamer_pass_gif", :alt => "gamerpass sneakpeak gif"%>
+      </div>
+    </div>
 		<div class="form placeholder-box">
       <%= render "signupform" %>
     </div>
 	</div>
+  <!-- Help grow tournaments and your local community for your favorite games
+Get invited to tournaments in your area
+Buy and sell games and other accessories with gamers in your area
+Learn more about your favorite esports teams and local venues
+Discover new gaming job opportunities  -->
   <div class="selling-points__box">
-    <h2 class="selling-point">Key Detail about Gamer Pass</h2>
-    <h2 class="selling-point">Another Consideration</h2>
-    <h2 class="selling-point">Big Claim Reinforcing Unique Value Proposition</h2>
+    <h2 class="selling-point">Help&nbsp;Grow&nbsp;Tournaments in&nbsp;Your&nbsp;Community</h2>
+    <hr class="horizontal-rule__taper">
+    <h2 class="selling-point">Buy&nbsp;and&nbsp;Sell Games&nbsp;and&nbsp;other Accessories with&nbsp;Gamers&nbsp;in&nbsp;your&nbsp;Area</h2>
+    <hr class="horizontal-rule__taper">
+    <h2 class="selling-point">Get&nbsp;Invited to Tournaments&nbsp;in&nbsp;Your&nbsp;Area</h2>
+    <hr class="horizontal-rule__taper">
+    <h2 class="selling-point">Discover&nbsp;New&nbsp;Gaming Job&nbsp;Opportunities</h2>
+    <hr class="horizontal-rule__taper">
+    <h2 class="selling-point">Learn&nbsp;More&nbsp;about&nbsp;Your Favorite&nbsp;Esports&nbsp;Teams and Local&nbsp;Venues</h2>
   </div><!-- SELLING POINTS -->
 
   <!-- CONTENT MAIN -->

@@ -45,7 +45,7 @@
       </label>
     </div>
     <div id="game__selection" class="game__selection">
-    <h4>Which are your games?</h4>
+    <h4 class="form-prompt">What are your Favorite Games?</h4>
     <label>
       <h5>Xbox</h5>
       <%= select_tag("xbox[]", options_from_collection_for_select(@xbox.games, :id, :name), {:class => "js-example-basic-multiple", :include_blank => '', :multiple => true}) %>
