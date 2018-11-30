@@ -11,6 +11,7 @@
   padding-top: 40px;
   padding-bottom: 30px;
   border-radius: 10px;
+  max-width: 580px;
 }
 
 h3.modal-title{
